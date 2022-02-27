@@ -1,0 +1,41 @@
+.form_root {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form_root > input,
+.form_root > button {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid rgb(69, 36, 127);
+    color: rgb(69, 36, 127);
+    font-weight: 300;
+}
+
+.form_root .form_input {
+    outline: none;
+}
+
+.form_root .form_button {
+    background-color: rgb(71, 44, 133);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-left: 0;
+}
+
+.form_button:disabled {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.form_button:hover {
+    background-color: rgba(71, 44, 133, 0.4);
+}
+
+/*rgb(69, 36, 127) fiolet*/
+/*rgb(146, 60, 217) jasny fiolet*/
+/*rgb(71, 44, 133) ciemny fiolet*/
+/*#25e8da seledyn*/
+/*#1284c2 niebieski*/
+/*#20b8ad ciemny seledyn*/
+/*rgb(234, 92, 28) pomaranczowy*/

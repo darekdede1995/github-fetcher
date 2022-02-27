@@ -1,0 +1,12 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #064663;
+}
+
+.root {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
