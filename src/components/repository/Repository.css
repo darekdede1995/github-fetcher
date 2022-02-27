@@ -1,17 +1,27 @@
-.user_root {
+.repository_root {
     display: flex;
-    cursor: pointer;
+    flex-direction: column;
     border: 1px solid rgb(69, 36, 127);
     border-radius: 5px;
     position: relative;
+    margin-bottom: 8px;
+    padding: 16px;
 }
 
-.user_root:hover:after {
-    content: "Click to open user profile";
+.repository_card {
+    display: flex;
+    width: 100%;
+}
+
+.repository_root.repository_collapsed:hover:after {
+    content: "Click to expand repository card";
+    cursor: pointer;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
+    left: 0;
     font-size: 20px;
     color: white;
     width: 100%;
@@ -19,57 +29,76 @@
     background-color: rgba(71, 44, 133, 0.9);
 }
 
-.user_avatar {
-    width: 150px;
-    height: 150px;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    border-radius: 5px;
-}
-
-.user_additionalInfo,
-.user_baseInfo {
+.repository_additionalInfo,
+.repository_baseInfo {
     display: flex;
     flex-direction: column;
-    padding: 8px 24px;
 }
 
-.user_baseInfo > div {
-    display: flex;
-    margin-bottom: 4px;
-    align-items: center;
-}
-
-.user_name {
-    font-size: 24px;
-    font-weight: 600;
-    margin-right: 8px;
-}
-
-.user_login {
-    font-size: 18px;
-    font-weight: 500;
-    color: gray;
-}
-
-.user_id {
-    color: gray;
-    margin-bottom: 8px;
-}
-
-.user_additionalInfo {
+.repository_additionalInfo {
     margin-left: auto;
+    width: 75px;
 }
 
-.user_additionalInfo div {
+.repository_additionalInfo div {
     padding: 8px;
     display: flex;
     align-items: center;
 }
 
-.user_additionalInfo img {
+.repository_additionalInfo img {
     width: 25px;
     height: 25px;
     margin-right: 8px;
+}
+
+.repository_name {
+    text-decoration: none;
+    color: rgb(71, 44, 133);
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.repository_name:hover {
+    color: rgb(146, 60, 217);
+}
+
+.repository_id {
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.repository_date {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.repository_description {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+.repository_info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.repository_commits {
+    margin-top: 16px;
+}
+
+.repository_loading {
+    color: rgb(69, 36, 127);
+}
+
+.repository_error {
+    color: rgb(234, 92, 28);
 }

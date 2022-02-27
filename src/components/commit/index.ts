@@ -1,1 +1,1 @@
-export { default as Repository } from './Repository'
+export { default as Commit } from './Commit'

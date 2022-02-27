@@ -1,12 +1,37 @@
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #064663;
+.form_root {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-.root {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.form_root > input,
+.form_root > button {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid rgb(69, 36, 127);
+    color: rgb(69, 36, 127);
+    font-weight: 300;
+}
+
+.form_root .form_input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.form_root .form_button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(71, 44, 133);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-left: 0;
+}
+
+.form_button:disabled {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.form_button:hover {
+    background-color: rgba(71, 44, 133, 0.4);
 }
